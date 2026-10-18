@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guia Sobrenatural</title>
+<meta name="description" content="Guia de estudo e prática dos 14 capítulos de Como se tornar sobrenatural, de Joe Dispenza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf7fe;--bg-soft:#f3e8fb;--surface:#fff;--surface-2:#f9f1ff;--deep:#4a2c6a;--deep-2:#5d3a80;--lavanda:#e8d5f5;--gold:#c9a86a;--gold-soft:#e7d5b1;--text:#2d2240;--text-soft:#7a6a90;--border:#ede2f5;--btn:#4a2c6a;--btn-text:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#1a1126;--bg-soft:#241734;--surface:#2a1d3d;--surface-2:#322448;--text:#f5eeff;--text-soft:#b8a6d0;--border:#3e2d5a;--deep:#f0e2ff;--deep-2:#e8d5f5;--gold:#dcc69c;--gold-soft:#3a2e1e;--btn:#8a6eb5;--btn-text:#fff}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:"Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;min-height:100vh;overflow-x:clip}
+.serif,h1,h2,h3{font-family:"Cormorant Garamond",serif}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::-webkit-scrollbar{display:none}
+.bg-glow{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:linear-gradient(180deg,var(--bg),var(--bg-soft))}
+.bg-glow i{position:absolute;border-radius:50%;filter:blur(90px)}
+.bg-glow i:nth-child(1){top:-8rem;left:50%;transform:translateX(-50%);width:700px;height:700px;background:var(--lavanda);opacity:.4}
+.bg-glow i:nth-child(2){top:1200px;left:-8rem;width:400px;height:400px;background:var(--gold-soft);opacity:.3}
+header{position:sticky;top:0;z-index:30;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:color-mix(in srgb,var(--surface) 80%,transparent);border-bottom:1px solid var(--border);padding-top:env(safe-area-inset-top)}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+.bar{height:56px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:32px;height:32px;border-radius:50%;background:#4a2c6a;color:#fff;display:flex;align-items:center;justify-content:center}
+.brand b{display:block;font-family:"Cormorant Garamond",serif;font-size:16px;font-weight:600;color:var(--deep);line-height:1}
+.brand small{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-soft);margin-top:2px}
+.pill{font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--text-soft);white-space:nowrap}
+main{padding-bottom:64px}
+.tag{display:inline-flex;align-items:center;gap:8px;margin-top:32px;padding:6px 12px;border-radius:999px;font-size:11px;font-weight:500;letter-spacing:.03em;background:var(--surface);border:1px solid var(--border);color:var(--deep)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+h1{margin-top:20px;font-size:42px;line-height:.98;font-weight:500;letter-spacing:-.02em;color:var(--deep)}
+h1 em{font-weight:600;color:var(--deep-2)}
+@media(min-width:640px){h1{font-size:50px}}
+.lead{margin-top:16px;color:var(--text-soft);font-size:16px;line-height:1.55}
+.lead strong{color:var(--text);font-weight:500}
+.frame{margin-top:24px;border-radius:20px;padding:1px;background:linear-gradient(135deg,var(--lavanda),var(--gold-soft))}
+.frame>div{border-radius:19px;background:var(--surface);padding:16px;display:flex;gap:12px}
+.ico52{width:52px;height:52px;border-radius:14px;background:var(--bg-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:24px}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--gold)}
+.frame h3{font-size:18px;line-height:1.15;font-weight:600;color:var(--deep);margin-top:4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips span{font-size:11px;padding:4px 8px;border-radius:999px;background:var(--surface-2);color:var(--text-soft)}
+.card{border-radius:24px;border:1px solid var(--border);background:var(--surface);padding:20px;margin-top:32px;box-shadow:0 8px 30px -18px color-mix(in srgb,var(--deep) 20%,transparent)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.card h2{font-size:19px;font-weight:500;color:var(--deep)}
+.count{font-size:12px;padding:4px 10px;border-radius:999px;font-weight:500;background:var(--bg-soft);color:var(--deep);white-space:nowrap}
+.meter{margin-top:16px;height:6px;border-radius:99px;background:var(--border);overflow:hidden}
+.meter i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#4a2c6a,var(--gold));transition:width .7s}
+.dots{margin-top:18px;display:grid;grid-template-columns:repeat(7,1fr);gap:12px 0}
+.dot{display:flex;flex-direction:column;align-items:center;gap:6px}
+.dot span.c{width:34px;height:34px;border-radius:50%;border:2px solid var(--border);background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:var(--text-soft);transition:all .3s}
+.dot small{font-size:10px;color:var(--text-soft)}
+.dot.next span.c{border-color:var(--deep);color:var(--deep);box-shadow:0 0 0 4px color-mix(in srgb,var(--lavanda) 60%,transparent)}
+.dot.done span.c{background:#4a2c6a;border-color:#4a2c6a;color:#fff;transform:scale(1.05)}
+.dot.done small{color:var(--deep);font-weight:600}
+.hint{margin-top:16px;display:flex;gap:8px;align-items:center;font-size:12px;color:var(--text-soft)}
+.hint i{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.reset{margin-top:10px;font-size:12px;color:var(--text-soft);text-decoration:underline;text-underline-offset:3px}
+.list{margin-top:32px;display:grid;gap:24px}
+article{border-radius:28px;border:1px solid var(--border);background:var(--surface);overflow:hidden;transition:all .5s;box-shadow:0 8px 30px -18px color-mix(in srgb,var(--deep) 20%,transparent)}
+article.done{border-color:var(--deep);opacity:.93;box-shadow:0 12px 40px -12px color-mix(in srgb,var(--deep) 25%,transparent)}
+.head{padding:20px 20px 16px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.head .l{display:flex;gap:14px;min-width:0}
+.ico{width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid var(--border);font-size:22px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.badge{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:4px 8px;border-radius:999px;background:var(--bg-soft);color:var(--deep)}
+.meta small{font-size:11px;color:var(--text-soft)}
+article h2{font-size:25px;line-height:1.05;font-weight:600;margin-top:8px;color:var(--deep)}
+.sub{font-size:13px;color:var(--text-soft);margin-top:4px}
+.check{width:32px;height:32px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;color:transparent;font-weight:700;font-size:14px;flex-shrink:0;transition:all .3s;background:var(--surface)}
+article.done .check{background:#4a2c6a;border-color:#4a2c6a;color:#fff}
+.steps{margin:0 20px;border-radius:18px;background:var(--surface-2);padding:14px;display:grid;gap:10px}
+.steps div{display:flex;gap:10px;font-size:13.5px;line-height:1.4}
+.steps b{width:20px;height:20px;border-radius:50%;background:var(--surface);border:1px solid var(--border);color:var(--deep);font-size:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.pratica{position:relative;overflow:hidden;margin:16px 20px 0;border-radius:18px;border:1px solid var(--border);padding:16px}
+.pratica::after{content:"";position:absolute;right:-32px;top:-32px;width:96px;height:96px;border-radius:50%;background:var(--c);opacity:.2}
+.label{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--deep)}
+.pratica h3{font-size:17px;font-weight:600;color:var(--deep);margin-top:8px}
+.pratica .when{font-size:12px;font-weight:500;color:var(--text-soft);margin-top:4px}
+.pratica .how{margin-top:12px;display:flex;gap:12px;align-items:flex-start;position:relative;z-index:1}
+.pratica .how .m{width:64px;height:64px;border-radius:16px;border:1px solid var(--border);background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.pratica .how .m i{width:28px;height:28px;border-radius:50%;border:2px dashed var(--deep);display:flex;align-items:center;justify-content:center}
+.pratica .how .m i::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--deep)}
+.pratica .how .m span{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-soft);margin-top:4px}
+.pratica p{font-size:13px;line-height:1.5}
+.foot{padding:16px 20px 20px;display:grid;gap:12px}
+.ben{border-radius:16px;padding:14px;border:1px solid var(--border);border-left:3px solid var(--deep);background:color-mix(in srgb,var(--lavanda) 25%,var(--surface))}
+.ben p{font-size:13px;line-height:1.5;margin-top:6px}
+.quote{border-radius:16px;padding:14px;background:#4a2c6a;color:#fff;display:flex;gap:12px}
+.quote .q{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.quote small{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+.quote p{font-size:13px;line-height:1.45;margin-top:4px;font-weight:500}
+.final{margin-top:40px;border-radius:28px;padding:1px;background:linear-gradient(135deg,var(--deep),var(--gold),var(--lavanda))}
+.final>div{border-radius:27px;background:var(--surface);padding:24px;text-align:center}
+.final .ic{width:48px;height:48px;border-radius:50%;background:var(--bg-soft);color:var(--deep);margin:0 auto;display:flex;align-items:center;justify-content:center}
+.final h3{font-size:27px;font-weight:600;line-height:1.1;margin-top:16px;color:var(--deep)}
+.final h3 em{font-weight:500}
+.final p{font-size:14px;line-height:1.6;color:var(--text-soft);margin-top:12px}
+.final .st{display:inline-flex;gap:8px;align-items:center;margin-top:24px;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:500;border:1px solid var(--border);background:var(--bg-soft);color:var(--deep)}
+.note{margin-top:24px;border-radius:20px;border:1px solid var(--border);background:var(--surface);padding:20px;text-align:center}
+.note h3{font-size:18px;font-weight:500;color:var(--deep)}
+.note p{font-size:13px;color:var(--text-soft);margin-top:8px;line-height:1.55}
+.credit{margin-top:16px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-soft)}
+.tiny{margin-top:24px;text-align:center;font-size:11px;color:var(--text-soft)}
+</style>
+</head>
+<body>
+<div class="bg-glow"><i></i><i></i></div>
+
+<header>
+  <div class="wrap bar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">✦</div>
+      <div><b>Guia Sobrenatural</b><small>Mente • Corpo • Presença</small></div>
+    </div>
+    <div class="pill">★ Guia de estudo</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <div class="tag"><i></i>BASEADO EM “COMO SE TORNAR SOBRENATURAL”</div>
+    <h1>Jornada<br><em>14 Capítulos</em><br>para Viver<br>o Extraordinário</h1>
+    <p class="lead">Um guia de estudo do livro do Dr. Joe Dispenza. A ideia central: <strong>você pode mudar quem é</strong> ao mudar seus pensamentos, suas emoções e seu estado de ser — praticando, um capítulo de cada vez.</p>
+    <div class="frame"><div>
+      <div class="ico52">📖</div>
+      <div>
+        <div class="eyebrow">O livro</div>
+        <h3>Como se tornar sobrenatural: pessoas comuns realizando o extraordinário</h3>
+        <div class="chips"><span>Joe Dispenza</span><span>14 capítulos</span><span>Edição CDG, 2020</span></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="card" aria-label="Progresso">
+    <div class="row"><h2 class="serif">Seu progresso na jornada</h2><div class="count" id="count">0 de 14</div></div>
+    <div class="meter" aria-hidden="true"><i id="meter"></i></div>
+    <div class="dots" id="dots"></div>
+    <div class="hint"><i></i>Marque o capítulo como estudado e praticado. Seu progresso fica salvo neste aparelho.</div>
+    <button class="reset" id="reset" type="button">Limpar progresso</button>
+  </section>
+
+  <section class="list" id="list"></section>
+
+  <section class="final">
+    <div>
+      <div class="ic">✦</div>
+      <h3>Você não precisa de mais uma informação.<br><em>Precisa de uma prática que vira hábito.</em></h3>
+      <p>O livro insiste numa ideia simples: entender é só o primeiro passo. A mudança acontece quando você pratica todos os dias, sente a emoção do futuro que quer viver e solta o resultado.</p>
+      <div class="st" id="status">★ 0/14 capítulos percorridos</div>
+    </div>
+  </section>
+
+  <section class="note">
+    <h3 class="serif">Sobre este guia</h3>
+    <p>Este é um material de estudo feito com resumos em palavras próprias, para apoiar sua leitura. Ele não substitui o livro nem tratamento médico: as histórias de cura são relatos do autor, não promessas de resultado.</p>
+    <div class="credit">Guia • Como se tornar sobrenatural • Joe Dispenza</div>
+  </section>
+  <p class="tiny">Feito com calma, para ler e praticar ✦</p>
+</main>
+
+<script>
+var CAPS = [
+ {n:1,ic:"🚪",cor:"#E8D5F5",t:"Abra a porta para o sobrenatural",s:"A história de Anna e o primeiro convite",
+  passos:["Anna perdeu o marido de forma trágica; o luto e o estresse constante ficaram presos em seu corpo.","Depois vieram paralisia nas pernas e um câncer — o corpo expressando o que a mente não soltava.","Com meditação diária, ela mudou pensamentos e emoções e relatou a recuperação da saúde."],
+  pt:{h:"Escolha a sua prática diária",q:"Antes de dormir, ou ao acordar",c:"Decida um horário fixo para sentar em silêncio por alguns minutos todos os dias. O livro enfatiza que a constância pesa mais que a duração."},
+  ben:"Somos mais do que um corpo e uma história pessoal. O autor propõe que cada um tem várias possibilidades de vida esperando no momento presente — e que a forma de acessá-las é mudar a si mesmo.",
+  fr:"Eu não sou a minha história. Posso escolher quem serei a partir de agora."},
+ {n:2,ic:"⏳",cor:"#D6BCEC",t:"O momento presente",s:"Sair do passado conhecido e do futuro previsível",
+  passos:["Pensamentos ativam redes de neurônios; repetidos, viram hábitos automáticos.","O ciclo pensamento–sentimento prende o corpo às emoções do passado.","Estar presente é ir além do corpo, do ambiente e do tempo para ficar disponível ao novo."],
+  pt:{h:"Perceba e interrompa o ciclo",q:"Várias vezes ao dia",c:"Quando notar um pensamento ou emoção de estresse que você já conhece de cor, pare, respire e volte ao agora. Cada interrupção devolve energia para criar."},
+  ben:"Segundo o autor, quando você deixa de reativar as mesmas lembranças e expectativas, o passado familiar e o futuro previsível perdem força — e sobra energia para criar algo novo.",
+  fr:"Neste instante não existe o velho roteiro. Existe espaço para algo novo."},
+ {n:3,ic:"🌌",cor:"#E8D5F5",t:"Sintonize em novos potenciais no quantum",s:"O campo de infinitas possibilidades",
+  passos:["O campo quântico (ou unificado) é descrito como um campo de energia e informação além do espaço e do tempo.","Escolha um futuro e as emoções elevadas que você sentiria ao vivê-lo.","Ensaie esse futuro, entregue-o a uma inteligência maior e solte o controle."],
+  pt:{h:"Meditação do novo estado de ser",q:"Sentado, de olhos fechados",c:"Liste as emoções elevadas do seu futuro (gratidão, alegria, amor), sinta-as agora, ensaie mentalmente a cena, entregue e abençoe seu corpo e sua vida. Repita até que o novo evento o encontre."},
+  ben:"A proposta: quando o seu estado de ser combina com o potencial desejado, você deixa de “correr atrás” — o novo evento tende a vir ao seu encontro. Pode levar dias, semanas ou mais.",
+  fr:"Eu sinto o futuro como se já fosse meu — e solto o como e o quando."},
+ {n:4,ic:"🔆",cor:"#E7D5B1",t:"Bênção dos centros de energia",s:"Sete centros mais um oitavo acima da cabeça",
+  passos:["Tudo é luz e informação; o corpo também emite e recebe frequências.","Leve a atenção a cada centro, abra o foco para o espaço ao redor dele e abençoe-o.","Sustente uma emoção elevada em cada centro, até chegar ao oitavo, cerca de 40 cm acima da cabeça."],
+  pt:{h:"Atenção, espaço e bênção",q:"Meditação guiada, seguida de 15 min deitado",c:"Em cada centro: atenção, espaço, bênção e emoção elevada. No oitavo, agradeça. Depois amplie a atenção para o campo de energia ao redor do corpo e deite-se ao menos 15 minutos para integrar."},
+  ben:"Gratidão é tratada como o estado final do receber. O texto reforça: para se sentir ilimitado e curado, é preciso treinar o corpo a sentir isso agora.",
+  fr:"Eu abençoo cada parte de mim e agradeço antes de receber."},
+ {n:5,ic:"🌬️",cor:"#D6BCEC",t:"Recondicione o corpo a uma nova mente",s:"Respiração, música e emoções elevadas",
+  passos:["O corpo vira “a mente” quando pensa e sente sempre igual, preso ao passado.","Uma técnica de respiração ajuda a tirar a mente do corpo e a mudar a energia.","Depois, abra o foco, torne-se consciência pura e ensaie emoções elevadas, uma a uma."],
+  pt:{h:"Respiração + música inspiradora",q:"Uma canção de 4 a 7 minutos",c:"Pratique a respiração enquanto ouve uma canção que o inspire. Em seguida, atenção ao corpo e ao espaço ao redor, torne-se “ninguém, em lugar nenhum”, cultive as emoções elevadas e termine abençoando."},
+  ben:"Quanto mais intensos os sentimentos elevados, mais o corpo recebe sinais para ativar novos genes — é a base da ideia de recondicionar o corpo a uma nova mente.",
+  fr:"Eu libero o passado do meu corpo e escolho sentir o que ainda vai nascer."},
+ {n:6,ic:"🌱",cor:"#E8D5F5",t:"Estudos de caso: exemplos vivos da verdade",s:"Ginny e Felícia",
+  passos:["Ginny sofria de dor crônica nas costas e pernas após um acidente de carro.","Felícia, médica, tinha eczema e fez um Mind Movie com cenas do futuro desejado.","Ambas aplicaram o que viram nos capítulos anteriores e relataram mudanças marcantes."],
+  pt:{h:"Leia como quem se reconhece",q:"Com um caderno por perto",c:"Ao ler cada história, anote o que a pessoa teve de superar e onde isso aparece na sua vida. O objetivo é pensar: se elas conseguiram, eu também posso tentar."},
+  ben:"Para o autor, histórias tornam as ideias pessoais: primeiro entendemos com a mente, depois vivemos no corpo e por fim viram sabedoria. Os resultados descritos são relatos, não garantia.",
+  fr:"Se pessoas comuns fizeram o incomum, eu também posso começar hoje."},
+ {n:7,ic:"💗",cor:"#E7D5B1",t:"Inteligência do coração",s:"Coerência cardíaca e emoções sinceras",
+  passos:["O coração é apresentado como órgão sensorial, fonte de campo eletromagnético e ponte para o campo unificado.","Respirar a partir do centro do coração ajuda a organizar o ritmo cardíaco.","Sinta emoções elevadas no peito e irradie essa energia para além do corpo."],
+  pt:{h:"Respirar pelo coração",q:"Comece com 10 minutos por dia",c:"Leve a atenção e a respiração ao centro do peito, mais lenta e profunda. Desperte uma emoção elevada, envie a energia para fora e aumente o tempo a cada dia. Opcional: alarme 4 vezes ao dia."},
+  ben:"“O cérebro pensa, o coração sabe”: quando o coração está aberto e coerente, você tende a manter seu estado interno, não importa o que acontece lá fora.",
+  fr:"Meu coração aberto é o lugar de onde eu escolho como vou viver."},
+ {n:8,ic:"🎬",cor:"#D6BCEC",t:"Mind Movies e caleidoscópio",s:"Programar o futuro com imagens e transe",
+  passos:["Monte um vídeo curto com imagens e cenas do futuro que deseja viver.","Assista a ele junto com um caleidoscópio, que ajuda a acalmar a mente analítica.","Com a repetição, o cérebro registra esse futuro como se já tivesse acontecido."],
+  pt:{h:"Seu Mind Movie diário",q:"Ao acordar e antes de dormir",c:"Assista ao seu Mind Movie com a música escolhida, depois fique 7 minutos olhando o caleidoscópio. Repita por um mês e registre num diário as coincidências e oportunidades que surgirem."},
+  ben:"Em estado de transe a pessoa fica mais sugestionável. A ideia é usar isso a seu favor, associando música e imagens do futuro a emoções elevadas.",
+  fr:"Eu vejo o meu futuro com tanta clareza que meu corpo começa a acreditar."},
+ {n:9,ic:"🚶",cor:"#E8D5F5",t:"Meditação caminhando",s:"Levar a energia para dentro do dia",
+  passos:["Depois de meditar sentado, é comum voltar aos hábitos automáticos e perder a energia criada.","Caminhar com intenção ajuda a personificar o futuro de olhos abertos.","Alterne caminhar e parar para recalibrar a energia."],
+  pt:{h:"Caminhe como o seu eu futuro",q:"Dois ciclos de cerca de 10 minutos",c:"Caminhe lembrando seu futuro e sentindo-o, pare e eleve a energia por 5 a 10 minutos, caminhe de novo. Ao final, mão no coração e afirme quem você é com base no que sente."},
+  ben:"A meditação sentada abre a porta, a caminhada ensina a atravessá-la: o objetivo é manter o estado elevado durante tarefas, trânsito e conversas.",
+  fr:"A cada passo eu me aproximo do meu destino, e ele se aproxima de mim."},
+ {n:10,ic:"🗝️",cor:"#E7D5B1",t:"Estudos de caso: fazendo acontecer",s:"Tim e Terry",
+  passos:["Tim fez um Mind Movie com símbolos de valor e se viu digno de receber.","Terry passou um ano meditando todos os dias e viveu uma vivência de amor profundo numa praia.","Ambos se definiram por uma visão de futuro, não por memórias do passado."],
+  pt:{h:"Quais símbolos representam o seu futuro?",q:"10 minutos com papel e caneta",c:"Escolha três imagens ou palavras que representem como você quer se sentir (valor, liberdade, afluência, amor). Use-as como lembretes visuais ao longo da semana."},
+  ben:"A lição é que o trabalho diário, simples e consistente, é o que transforma as práticas em habilidade — e a pessoa passa a se apaixonar mais pelo futuro do que pelo passado.",
+  fr:"Eu sou digno de receber o que estou criando."},
+ {n:11,ic:"🔭",cor:"#D6BCEC",t:"Espaço-tempo e tempo-espaço",s:"Quando a consciência vai além dos sentidos",
+  passos:["No mundo tridimensional, tudo existe para nós pelos sentidos: pessoas, objetos, lugares e tempo.","Ao se tornar consciência pura, você se projeta no campo unificado e sai dessa lógica.","Mantenha esse estado e sinta unicidade com tudo."],
+  pt:{h:"Tornar-se consciência pura",q:"10 a 20 min no campo unificado",c:"Faça a meditação do Capítulo 5 e depois ouça uma ou duas músicas instrumentais que induzam o transe. Ao final, volte à sala com um novo corpo, novo ambiente e novo tempo."},
+  ben:"O autor descreve que, quanto mais você se entrega, mais o corpo recebe energia coerente e mais cresce a sensação de totalidade.",
+  fr:"Eu não sou apenas um corpo num lugar: sou consciência que se expande."},
+ {n:12,ic:"🔮",cor:"#E8D5F5",t:"A glândula pineal",s:"Experiências internas mais reais que as externas",
+  passos:["Em meditação profunda, a energia do cérebro aumenta e a pessoa pode ter vivências internas muito vívidas.","A glândula pineal é apresentada como peça-chave dessas experiências.","Leve a atenção até a pineal, sinta a câmara e depois o espaço ao redor."],
+  pt:{h:"Atenção na pineal",q:"5 a 10 minutos em cada etapa",c:"Respire levando a atenção ao topo da cabeça, localize a pineal entre a garganta e a nuca, entre na câmara, irradie para além dela e apenas receba — sem antecipar. Depois deite-se."},
+  ben:"A orientação é não esperar nem forçar: quanto mais você se mantém presente, receptivo e sem expectativa, mais profunda tende a ser a experiência.",
+  fr:"Eu me abro e recebo, sem pressa e sem exigir nada."},
+ {n:13,ic:"🌍",cor:"#E7D5B1",t:"Projeto Coerência: por um mundo melhor",s:"Meditar juntos pelo planeta",
+  passos:["O texto descreve um tempo de extremos, em que modelos antigos perdem sustentação.","Coerência cardíaca é medida em grupos durante as meditações.","Participantes se conectam à Terra pelo coração e irradiam amor para ela."],
+  pt:{h:"Meditação da Terra no coração",q:"Em qualquer momento do dia",c:"Reconheça o coração, imagine-se afastando da Terra, segure o planeta no coração, eleve a frequência e irradie amor. O livro cita eventos com mais de 36 mil e 43 mil pessoas juntas."},
+  ben:"A ideia é que mudar o estado interno de cada pessoa influencia o coletivo e que a paz começa quando nos sentimos menos separados.",
+  fr:"A paz que eu cultivo em mim também é um presente para o mundo."},
+ {n:14,ic:"✨",cor:"#D6BCEC",t:"Estudos de caso: pode acontecer com você",s:"Stacy e a entrega ao divino",
+  passos:["Stacy, enfermeira e acupunturista, lidava com dores de cabeça fortes e um tumor benigno.","Em vez de tentar controlar o resultado, ela entregou a intenção a algo maior.","O texto destaca que o extraordinário acontece quando a personalidade sai do caminho."],
+  pt:{h:"Intenção + entrega",q:"No fim da meditação",c:"Formule em uma frase o que deseja viver, sinta a emoção como se já fosse real e termine entregando: “que isso ou algo melhor aconteça”. Depois solte."},
+  ben:"Os casos finais reforçam que a mesma inteligência que organiza o universo vive dentro de você — e que a atitude chave é abrir espaço, não forçar.",
+  fr:"Eu faço a minha parte e confio no que é maior que eu."}
+];
+
+var KEY="guia-sobrenatural-v1";
+var done=Array(14).fill(false);
+try{var s=JSON.parse(localStorage.getItem(KEY)||"null");if(Array.isArray(s)&&s.length===14)done=s.map(Boolean)}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(done))}catch(e){}}
+function esc(x){return String(x).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+var list=document.getElementById("list");
+list.innerHTML=CAPS.map(function(c,i){
+ return '<article data-i="'+i+'">'+
+ '<div class="head"><div class="l"><div class="ico" style="background:color-mix(in srgb,'+c.cor+' 45%,var(--surface))">'+c.ic+'</div><div style="min-width:0">'+
+ '<div class="meta"><span class="badge">Capítulo '+c.n+'</span></div>'+
+ '<h2 class="serif">'+esc(c.t)+'</h2><p class="sub">'+esc(c.s)+'</p></div></div>'+
+ '<button class="check" data-i="'+i+'" aria-label="Marcar capítulo '+c.n+' como concluído" aria-pressed="false">✓</button></div>'+
+ '<div class="steps">'+c.passos.map(function(p,k){return '<div><b>'+(k+1)+'</b><span>'+esc(p)+'</span></div>'}).join("")+'</div>'+
+ '<div class="pratica" style="--c:'+c.cor+';background:linear-gradient(135deg,color-mix(in srgb,'+c.cor+' 30%,var(--surface)),var(--surface))">'+
+ '<div class="label">◎ Prática do capítulo</div><h3 class="serif">'+esc(c.pt.h)+'</h3><div class="when">Quando: '+esc(c.pt.q)+'</div>'+
+ '<div class="how"><div class="m"><i></i><span>Prática</span></div><p>'+esc(c.pt.c)+'</p></div></div>'+
+ '<div class="foot"><div class="ben"><div class="label">O que o livro propõe</div><p>'+esc(c.ben)+'</p></div>'+
+ '<div class="quote"><div class="q">✦</div><div><small>Frase para refletir</small><p>“'+esc(c.fr)+'”</p></div></div></div>'+
+ '</article>';
+}).join("");
+
+var dots=document.getElementById("dots");
+dots.innerHTML=CAPS.map(function(c,i){return '<button class="dot" data-i="'+i+'" aria-label="Capítulo '+c.n+'"><span class="c">'+c.n+'</span><small>C'+c.n+'</small></button>'}).join("");
+
+function render(){
+ var n=done.filter(Boolean).length, first=done.indexOf(false);
+ document.getElementById("count").textContent=n+" de 14";
+ document.getElementById("meter").style.width=(n/14*100)+"%";
+ document.getElementById("status").textContent=n===14?"★ Jornada completa — que lindo!":"★ "+n+"/14 capítulos percorridos";
+ [].forEach.call(dots.children,function(d,i){
+  d.className="dot"+(done[i]?" done":i===first?" next":"");
+  d.querySelector(".c").textContent=done[i]?"✓":CAPS[i].n;
+ });
+ [].forEach.call(list.children,function(a,i){
+  a.classList.toggle("done",done[i]);
+  a.querySelector(".check").setAttribute("aria-pressed",done[i]?"true":"false");
+ });
+}
+function toggle(i){done[i]=!done[i];save();render()}
+list.addEventListener("click",function(e){var b=e.target.closest(".check");if(b)toggle(+b.dataset.i)});
+dots.addEventListener("click",function(e){
+ var b=e.target.closest(".dot");if(!b)return;
+ var a=list.children[+b.dataset.i];a.scrollIntoView({behavior:"smooth",block:"start"});
+});
+document.getElementById("reset").addEventListener("click",function(){
+ if(confirm("Limpar todo o progresso?")){done=Array(14).fill(false);save();render()}
+});
+render();
+</script>
+</body>
+</html>
